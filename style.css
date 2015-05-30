@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font-size: 16px; 
+    font-family: Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -7,9 +12,11 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
+
+
+/* ------------ */
+/* Orange Theme */
+/* ------------ */
 
 .header-container {
     border-bottom: 20px solid #e44d26;
@@ -30,9 +37,12 @@ body {
     color: white;
 }
 
-/* ==============
-    MOBILE: Menu
-   ============== */
+
+
+
+/* ----------- */
+/* Mobile Menu */
+/* ----------- */
 
 nav ul {
     margin: 0;
@@ -62,9 +72,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ==============
-    MOBILE: Main
-   ============== */
+
+
+
+/* ----------- */
+/* Main Styles */
+/* ----------- */
 
 .main {
     padding: 30px 0;
@@ -85,9 +98,11 @@ nav a:hover {
 }
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+
+
+/* ----------- */
+/* Your Styles */
+/* ----------- */
 
 
 
@@ -103,15 +118,15 @@ nav a:hover {
 
 
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
+
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+   
+
+/* Medium devices */
 
 @media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
 
     nav a {
         float: left;
@@ -129,24 +144,11 @@ nav a:hover {
         margin-right: 0;
     }
 
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
 
-@media only screen and (min-width: 768px) {
+/* Larger devices */
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
+@media only screen and (min-width: 768px) {
 
     .header-container,
     .main aside {
@@ -155,9 +157,7 @@ nav a:hover {
                 box-shadow: 0 5px 10px #aaa;
     }
 
-/* ============
-    WIDE: Menu
-   ============ */
+    /* Menu */
 
     .title {
         float: left;
@@ -168,9 +168,7 @@ nav a:hover {
         width: 38%;
     }
 
-/* ============
-    WIDE: Main
-   ============ */
+    /* Main */
 
     .main article {
         float: left;
@@ -183,14 +181,32 @@ nav a:hover {
     }
 }
 
+/* Largest size */
+
 @media only screen and (min-width: 1140px) {
 
-/* ===============
-    Maximal Width
-   =============== */
+    /* Max width */
 
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
+}
+
+
+
+
+/* --------- */
+/* Utilities */
+/* --------- */
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
 }

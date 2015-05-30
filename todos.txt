@@ -6,16 +6,16 @@ These tasks are optional - feel free to change up the code on your own, or follo
 
 1. Change the page title
 2. Change the font of the title
-3. Add an image somewhere
+3. Add an image
 4. Add a link
 5. Change the background color of the sidebar
 6. Add an unordered list
 7. Embed a video
-8. Add a background image to the header
-9. Create a div with it's own class, and add a style to it in the CSS (under the "Author's Custom Styles" section)
-10. Add a border to the sidebar
+8. Add a background image to body
+9. Add a border to the sidebar
+10. Create another page and link to it
 
-Ultimate bonus:
+Bonus:
 11. Change the border of the sidebar when you hover over it.
 
 
@@ -23,14 +23,15 @@ Ultimate bonus:
 
 1. Make the color scheme blue instead of orange
 2. Add a background image to the page header
-3. Add a link
+3. Use a text-shadow
 4. Style the hover and active states of the link
 5. Make another page and link to it
 6. Add a horizontal list
 7. Add an image to the aside box
 8. Make some text bigger when you hover over it
-9. Use a webfont
+9. Add a login form
 10. Change the background image for large screens (hint: the media queries are already there!)
 
 Super ultimate bonus:
 11. Add a popup when the page loads
+
